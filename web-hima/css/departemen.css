@@ -617,7 +617,6 @@ section {
     width: calc(100% - 250px);
   }
   /* //  departemen */
-
   .departemen {
     position: relative;
     top: 0;
@@ -626,26 +625,26 @@ section {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     z-index: 2;
-  }
-  
-  .departemen .icons-container {
+}
+
+.departemen .icons-container {
     margin-bottom: 2rem;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 2rem;
-  }
-  
-  .departemen .icons-container .icons {
+}
+
+.departemen .icons-container .icons {
     text-align: center;
     padding: 3rem 2rem;
     border: 1px solid #11101e;
     background: #dee3e2;
     border-radius: 10px;
-  }
-  
-  .departemen .icons-container .icons i {
+}
+
+.departemen .icons-container .icons i {
     height: 6rem;
     width: 6rem;
     line-height: 6rem;
@@ -654,43 +653,49 @@ section {
     margin-bottom: .5rem;
     color: #f0a500;
     background: #11101D;
-  }
-  
-  .departemen .icons-container .icons h3 {
+}
+
+.departemen .icons-container .icons h3 {
     font-size: 2rem;
     text-transform: capitalize;
     color: #444;
     padding: .5rem 0;
-  }
-  
-  .departemen .icons-container .icons p {
+}
+
+.departemen .icons-container .icons p {
     font-size: 1.3rem;
     line-height: 1.5;
     color: #777;
-  }
-  
-  .departemen .row { 
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-around;
-  }
+}
 
-.image{
-	flex-basis: 50%;
+.departemen .row { 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image {
+    flex-basis: 50%;
     width: auto;
 }
-.image img{
-	max-width: 100%;
-	padding: 5px 0;
+.image img {
+    max-width: 50%;
+    padding: 5px 0;
 }
-  
-  .departemen .row .image img {
-    width: auto;
+
+.text {
+    flex-basis: 50%;
+    padding: 10px;
+    font-size: 1.8rem; 
+    line-height: 1.9; 
+}
+
+.departemen .row .image img {
+    width: 100%;
     height: auto;
-  }
-  
-  
+}
+
   .faq {
     position: relative;
     top: 0;
@@ -807,6 +812,7 @@ section {
   }
   .anggota .heading{
     margin-top: 30px;
+    margin-left: 30px;
   }
 .container{
     max-width: 950px;
