@@ -476,11 +476,11 @@ section {
   }
   
   .footer .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(22rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 10px;
   }
   
   .footer .box-container .box h3 {
@@ -678,11 +678,25 @@ section {
 
 .image{
 	flex-basis: 50%;
-    width: auto;
+  width: 50%;
+  padding-right: 20px;
+  margin-right: -150px;
 }
 .image img{
-	max-width: 100%;
+	max-width: 50%;
 	padding: 5px 0;
+}
+
+.text {
+  flex-basis: 50%;
+  padding-left: 5px;
+}
+
+.text p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: #11101D;
 }
   
   .departemen .row .image img {
@@ -817,7 +831,7 @@ section {
   .container .main-card{
     display: flex;
     justify-content: space-evenly;
-    width: 400%;
+    width: 300%;
     transition: 1s;
   }
   #two:checked ~ .main-card{
@@ -825,9 +839,6 @@ section {
   }
   #three:checked ~ .main-card{
     margin-left: -200%;
-  }
-  #four:checked ~ .main-card{
-    margin-left: -300%;
   }
   .container .main-card .cards{
     width: calc(100% / 2 - 10px);
@@ -930,9 +941,6 @@ section {
   #one:checked ~ .button .three{
     width: 15px;
   }
-  #one:checked ~ .button .four{
-    width: 15px;
-  }
   #two:checked ~ .button .one{
     width: 15px;
   }
@@ -942,9 +950,6 @@ section {
   #two:checked ~ .button .three{
     width: 15px;
   }
-  #two:checked ~ .button .four{
-    width: 15px;
-  }
   #three:checked ~ .button .one{
     width: 15px;
   }
@@ -952,21 +957,6 @@ section {
     width: 15px;
   }
   #three:checked ~ .button .three{
-    width: 35px;
-  }
-  #three:checked ~ .button .four{
-    width: 15px;
-  }
-  #four:checked ~ .button .one{
-    width: 15px;
-  }
-  #four:checked ~ .button .two{
-    width: 15px;
-  }
-  #four:checked ~ .button .three{
-    width: 15px;
-  }
-  #four:checked ~ .button .four{
     width: 35px;
   }
   input[type="radio"]{
