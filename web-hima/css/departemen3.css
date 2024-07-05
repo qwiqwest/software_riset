@@ -753,6 +753,7 @@ section {
   }
   
   .faq .accordion-container .accordion .accordion-heading {
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -765,12 +766,22 @@ section {
     gap: 1rem;
     cursor: pointer;
     padding: 1.5rem;
-  }
-  
+}
+
+.faq .accordion-container .accordion .accordion-content {
+    display: block !important;
+    max-height: none !important; 
+    overflow: visible !important; 
+    padding: 1.5rem; 
+}
+
   .faq .accordion-container .accordion .accordion-heading h3 {
+    text-align: center;
     font-size: 2rem;
     text-transform: capitalize;
     color: #444;
+    margin: 0 auto;
+    flex: 1;
   }
   
   .faq .accordion-container .accordion .accordion-heading i {
