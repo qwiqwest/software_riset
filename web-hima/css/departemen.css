@@ -691,9 +691,12 @@ section {
     line-height: 1.9; 
 }
 
-.departemen .row .image img {
+.departemen .row .image  {
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
   .faq {
@@ -789,6 +792,7 @@ section {
     display: none;
     background-color: #dee3e2;
     margin-bottom: 0;
+    text-align: justify;
   }
   .anggota{
     display: flex;
