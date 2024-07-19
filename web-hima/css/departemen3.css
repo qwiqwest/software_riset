@@ -739,11 +739,11 @@ section {
   }
   
   .faq .accordion-container .accordion.active .accordion-heading h3 {
-    color: #fff;
+    color: #444;
   }
   
   .faq .accordion-container .accordion.active .accordion-heading i {
-    color: #fff;
+    color: #444;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
@@ -766,6 +766,8 @@ section {
     gap: 1rem;
     cursor: pointer;
     padding: 1.5rem;
+    pointer-events: none;
+    background-color: #f0a500;
 }
 
 .faq .accordion-container .accordion .accordion-content {
