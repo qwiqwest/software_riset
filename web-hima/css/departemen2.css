@@ -688,8 +688,10 @@ section {
 }
 
 .text {
-  flex-basis: 50%;
-  padding-left: 5px;
+    flex-basis: 50%;
+    padding: 10px;
+    font-size: 1.8rem; 
+    line-height: 1.9; 
 }
 
 .text p {
@@ -700,8 +702,11 @@ section {
 }
   
   .departemen .row .image img {
-    width: auto;
+    width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
   }
   
   
@@ -739,11 +744,11 @@ section {
   }
   
   .faq .accordion-container .accordion.active .accordion-heading h3 {
-    color: #fff;
+    color: #444;
   }
   
   .faq .accordion-container .accordion.active .accordion-heading i {
-    color: #fff;
+    color: #444;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
@@ -766,6 +771,8 @@ section {
     gap: 1rem;
     cursor: pointer;
     padding: 1.5rem;
+    pointer-events: none;
+    background-color: #f0a500;
 }
 
 .faq .accordion-container .accordion .accordion-content {
