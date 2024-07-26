@@ -919,71 +919,55 @@ section{
       }
    }
 }
-
-.faq{
+.faq {
    position: relative;
-    top: 0;
-    left: 78px;
-    width: calc(100% - 78px);
-    transition: all 0.5s ease;
-    z-index: 2;
-   .accordion-container{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: flex-start;
-
-      .accordion{
-         flex: 1 1 40rem;
-         border: 1px solid #11101D;
-
-         &.active{
-            .accordion-heading{
-               background: #f0a500;
-
-               h3{
-                  color: $white;
-               }
-
-               i{
-                  color: $white;
-                  transform: rotate(180deg);
-               }
-            }
-         
-            .accordion-content{
-               display: block;
-            }
+   top: 0;
+   left: 78px;
+   width: calc(100% - 78px);
+   transition: all 0.5s ease;
+   z-index: 2;
+ 
+   .accordion-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     align-items: flex-start;
+ 
+     .accordion {
+       flex: 1 1 40rem;
+       border: 1px solid #11101D;
+ 
+       .accordion-heading {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 1rem;
+         cursor: pointer;
+         padding: 1.5rem;
+ 
+         h3 {
+           @include titleText(2rem);
          }
-         .accordion-heading{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            cursor: pointer;
-            padding: 1.5rem;
-
-            h3{
-               @include titleText(2rem);
-            }
-
-            i{
-               font-size: 2rem;
-               color: #f0a500;
-            }
+ 
+         i {
+           font-size: 2rem;
+           color: #f0a500;
+           transform: rotate(0deg); // Atur rotasi ke default
          }
-         .accordion-content{
-            padding: 1.5rem;
-            @include graphText(1.5rem);
-            border-top: 1px solid #11101D;
-            display: none;
-            background-color: #dee3e2;
-            margin-bottom: 0;
-         }
-      }
+       }
+ 
+       .accordion-content {
+         padding: 1.5rem;
+         @include graphText(1.5rem);
+         border-top: 1px solid #11101D;
+         display: block; // Ubah ke block untuk menampilkan konten
+         background-color: #dee3e2;
+         margin-bottom: 0;
+       }
+     }
    }
-}
-
+ }
+ 
 .logo-container{
     position: relative;
     top: 0;
