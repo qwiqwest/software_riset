@@ -689,6 +689,8 @@ section {
     padding: 10px;
     font-size: 1.8rem; 
     line-height: 1.9; 
+    text-align: justify;
+    color: #11101D;
 }
 
 .departemen .row .image  {
