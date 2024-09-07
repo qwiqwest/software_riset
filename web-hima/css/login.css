@@ -651,11 +651,11 @@ section {
    transition: 1s 0.7s ease-in-out;
 }
 form{
-   display: flex;
+   /* display: flex; */
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   padding: 0 5rem;
+   /* padding: 0 5rem; */
    overflow: hidden;
    grid-column: 1 / 2;
    grid-row: 1 / 2;
