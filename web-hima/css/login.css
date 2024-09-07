@@ -463,98 +463,98 @@ section {
 
 /* Footer */
 .footer {
-    background: #11101D;
-    position: relative;
-    top: 0;
-    left: 78px;
-    width: calc(100% - 78px);
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: 2;
-  }
-  
-  .footer .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(22rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 2rem;
-  }
-  
-  .footer .box-container .box h3 {
-    font-size: 2.2rem;
-    text-transform: capitalize;
-    color: #FFF;
-    padding: 1rem 0;
-  }
-  
-  .footer .box-container .box h3 img {
-    width: 40px;
-    height: 35px;
-    padding-right: 5px;
-  }
-  
-  .footer .box-container .box .share {
-    margin-top: 1rem;
-  }
-  
-  .footer .box-container .box .share a {
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    font-size: 1.7rem;
-    background-color: #f0a500;
-    color: #11101D;
-    margin-right: .3rem;
-    text-align: center;
-  }
-  
-  .footer .box-container .box .share a:hover {
-    background: #dee3e2;
-  }
-  
-  .footer .box-container .box .link {
-    font-size: 1.7rem;
-    line-height: 1.5;
-    color: #777;
-    padding: .5rem 0;
-    display: block;
-  }
-  
-  .footer .box-container .box .link::hover {
-    color: #0eb582;
-    text-decoration: underline;
-  }
-  
-  .footer .box-container .box P {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    color: #777;
-    padding: .5rem 0;
-  }
-  
-  .footer .box-container .box .email {
-    width: 100%;
-    padding: 1.2rem 1.4rem;
-    font-size: 1.6rem;
-    border: 1px solid #f0a500;
-    margin-bottom: 1rem;
-    background: #dee3e2;
-  }
-  
-  .footer .credit {
-    text-align: center;
-    margin-top: 3rem;
-    padding-top: 3rem;
-    font-size: 2rem;
-    text-transform: capitalize;
-    color: #FFF;
-    border-top: 1px solid #f0a500;
-  }
-  
-  .footer .credit span {
-    color: #f0a500;
-  }
+  background: #11101D;
+  position: relative;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.footer .box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 10px;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: #FFF;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 img {
+  width: 40px;
+  height: 35px;
+  padding-right: 5px;
+}
+
+.footer .box-container .box .share {
+  margin-top: 1rem;
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background-color: #f0a500;
+  color: #11101D;
+  margin-right: .3rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background: #dee3e2;
+}
+
+.footer .box-container .box .link {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: #777;
+  padding: .5rem 0;
+  display: block;
+}
+
+.footer .box-container .box .link::hover {
+  color: #0eb582;
+  text-decoration: underline;
+}
+
+.footer .box-container .box P {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #777;
+  padding: .5rem 0;
+}
+
+.footer .box-container .box .email {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  border: 1px solid #f0a500;
+  margin-bottom: 1rem;
+  background: #dee3e2;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #FFF;
+  border-top: 1px solid #f0a500;
+}
+
+.footer .credit span {
+  color: #f0a500;
+}
   
   @media (max-width: 1200px) {
     .header {
