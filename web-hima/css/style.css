@@ -481,6 +481,8 @@ section {
   height: 60rem;
   background-size: cover !important;
   background-position: top !important;
+  border: 5px solid #ffffff;
+  border-radius: 20px;
 }
 
 .home .slide .content {
@@ -504,7 +506,8 @@ section {
 }
 
 .home .swiper-pagination-bullet-active {
-  background: #f0a500;
+  background: #ffffff;
+
 }
 
 .subjects {
