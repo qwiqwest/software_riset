@@ -506,9 +506,18 @@ section {
 }
 
 .home .swiper-pagination-bullet-active {
-  background: #ffffff;
+  background: #ffaa4d;
 
 }
+
+.swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: #0400ff;
+}
+
 
 .subjects {
   background-color: #ffffff;
