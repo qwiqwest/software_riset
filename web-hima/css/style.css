@@ -1830,6 +1830,49 @@ section {
 .btn1:hover::before {
   transform: scaleX(1); /* Efek garis muncul saat di-hover */
 }
+.swiper-button-next, .swiper-button-prev {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background-color: #ffd57a; /* Ubah warna saat hover */
+  transform: scale(1.1); /* Efek memperbesar */
+}
+
+/* Gaya icon (misal dari Font Awesome) */
+.swiper-button-next i, .swiper-button-prev i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Ubah posisi tombol */
+.swiper-button-next {
+  right: 10px;
+}
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  background-color: transparent; /* Hilangkan background */
+  border: none; /* Hilangkan border */
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 24px; /* Ukuran panah */
+  color: white; /* Warna panah */
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
