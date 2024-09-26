@@ -37,3 +37,21 @@ var swiper = new Swiper(".home-slider", {
       },
     },
   });
+
+  var swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,  // Agar bisa looping
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // Pagination (optional)
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+  
