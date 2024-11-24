@@ -146,13 +146,13 @@
       <div class="image">
          <img src="images/contact.svg" alt="">
       </div>
-      <form action="">
+      <form action="https://formspree.io/f/xvgobbpp" method="POST">
          <h3>send us a message</h3>
-         <input type="text" placeholder="Name" class="box">
-         <input type="email" placeholder="Email" class="box">
-         <input type="number" placeholder="Phone" class="box">
-         <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea>
-         <input type="submit" value="send message" class="btn1">
+         <input name="fullname" type="text" placeholder="Name" class="box" id="fullname" required>
+         <input name="email" type="email" placeholder="Email" class="box" id="email" required>
+         <input name="number" type="number" placeholder="Phone" class="box" id="number" required>
+         <textarea name="massage" class="box" placeholder="Message" id="" cols="30" rows="10" id="massage" required></textarea>
+         <input name="submit" type="submit" value="Send" class="btn1">
       </form>
 
    </div>
