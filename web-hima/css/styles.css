@@ -1,6 +1,6 @@
 .photo-album {
     text-align: center;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .heading {
@@ -330,4 +330,41 @@
     width: calc(100% - 78px);
     transition: all 0.5s ease;
     position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar.open {
+    width: 100vw;
+    left: 0;
+  }
+
+  .sidebar.open ~ .photo-album {
+    left: 0 !important;
+    width: 100% !important;
+  }
+
+  .photo-album {
+    left: 0 !important;
+    width: 100% !important;
+    padding: 0 10px;
+  }
+
+  .album-container {
+    max-width: 100% !important;
+    padding: 0;
+  }
+
+  .album {
+    height: auto !important;
+  }
+
+  .image {
+    height: auto !important;
+  }
+
+  .image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
 }

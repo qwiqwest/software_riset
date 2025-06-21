@@ -574,6 +574,20 @@ section {
 }
 
 @media (max-width: 768px) {
+  .sidebar.open {
+    width: 100vw;     /* Lebar penuh layar */
+    left: 0;
+  }
+
+  .sidebar.open ~ .home-section,
+  .sidebar.open ~ .departemen,
+  .sidebar.open ~ .footer,
+  .sidebar.open ~ .heading-link,
+  .sidebar.open ~ .faq,
+  .sidebar.open ~ .anggota {
+    left: 0;
+    width: 100vw;
+  }
   .home .slide .content h3 {
     font-size: 3rem;
   }
